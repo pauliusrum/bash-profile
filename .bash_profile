@@ -6,7 +6,7 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # ========================================================
-# Change promt
+# Change prompt
 # ========================================================
 
 export PS1="| (\u) > \w "'$(
