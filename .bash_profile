@@ -9,14 +9,14 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # Change prompt
 # ========================================================
 
-export PS1="| (\u) > \w "'$(
+export PS1="(\u) > \w "'$(
     if [[ $(__git_ps1) =~ \*\)$ ]] 
-    then echo "\e[1;33m" $(__git_ps1) "\e[0m"
+    then echo "\e[1;33m" $(__git_ps1)"\e[0m"
     elif [[ $(__git_ps1) =~ \+\)$ ]] 
-    then echo "\e[1;33m" $(__git_ps1) "\e[0m"
-    else echo "\e[0;32m" $(__git_ps1) "\e[0m"
-    fi)'" \n| => "
-export PS2="| => "
+    then echo "\e[1;33m" $(__git_ps1)"\e[0m"
+    else echo "\e[0;32m" $(__git_ps1)"\e[0m"
+    fi)'"\n=> "
+export PS2="=> "
 
 # ========================================================
 # Auto completion
@@ -30,7 +30,8 @@ fi
 # GIT
 # ========================================================
 
-source ~/.bash/git-completion.bash
+source .bash/git-completion.bash
+source .bash/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # ========================================================
