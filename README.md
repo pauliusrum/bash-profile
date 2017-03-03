@@ -2,6 +2,7 @@
 
 Bash profile for MAC OS.
 
-### Asset links
+### Assets
 
-[git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
+[git-completion.bash](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
+[git-prompt.sh](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
