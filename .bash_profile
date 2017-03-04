@@ -30,8 +30,8 @@ fi
 # GIT
 # ========================================================
 
-source .bash/git-completion.bash
-source .bash/git-prompt.sh
+source ~/.bash/git-completion.bash
+source ~/.bash/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # ========================================================
