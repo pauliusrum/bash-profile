@@ -9,7 +9,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # Change prompt
 # ========================================================
 
-export PS1="(\u) > \w "'$(
+export PS1="(\u) \D{%T} > \w "'$(
     if [[ $(__git_ps1) =~ \*\)$ ]] 
     then echo "\e[1;33m" $(__git_ps1)"\e[0m"
     elif [[ $(__git_ps1) =~ \+\)$ ]] 
